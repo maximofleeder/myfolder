@@ -1,0 +1,225 @@
+<!DOCTYPE html> <!-- Kommentar: so startet das Programmieren mit HTML ordentlich -->
+<html> 
+<head> <!-- Kommentar: das hier ist sozusagen das Gehirn der Homepage, man sieht es nicht, es handelt sich um Metadaten -->
+<meta charset="utf-8"> <!-- Kommentar: Unicode, damit der Browser die Umlaute erkennt und richtig schreibt -->
+<meta name="keywords" content="Brasilien, Vegan, Vegetarisch, fleischlos, ohne Fleisch, vegane Küche, vegetarische Küche, fleischlose Küche"> <!-- Kommentar: Befehl, damit Suchmaschinen diese Schlüsselwörter erkennen -->
+<title>Vegetarische Restaurants in Brasilien</title> 
+</head>
+<body>
+<h1>Vegetarische Restaurants in Brasilien</h1>
+<h2>Wir zeigen Ihnen, wie man Brasiliens Küche fleischlos genießen kann!</h2>
+<hr/> <!-- Kommentar: horizontal rule: das ist eine Linie unter der Überschrift -->
+
+
+http://colorbrewer2.org/
+
+<figure>
+	<a href="Image/innsbruck.jpg" title="Klicken für ein großes Bild"> <!-- Kommentar: Mit a-Element können Sie einen Anker (anchor) zu einem anderen Dokument setzen. Diese Hyperlinks werden auch „Verweise“ genannt. -->
+		<img src="Icon/innsbruck_icon.jpg" alt="Icon von Blick auf Innsbruck"/> <!-- Kommentar: Die Eigenschaft alt liefert oder verändert den Alternativtext, der angezeigt wird, wenn das Bild nicht geladen werden kann. -->
+	</a>
+			<figcaption style="font-size:85%"> <!-- Kommentar: Untertitel für Bild -->
+				<strong><em>Blick auf Innsbruck</em></strong> <!-- Kommentar: strong steht für Fettdruck und em für kursiv -->
+			</figcaption>
+</figure>
+
+<img src="Image/innsbruck.jpg" alt="Patscherkofelblick" 
+	title="Patscherkofelblick"
+	style="width:300px; height:200px; border:2px solid blue"/> <!-- Kommentar: Bild wird angezeigt mit Titel und die Größe angepasst-->
+	
+
+<p>
+So macht man einen Absatz
+</p>
+
+In Brasilien </br> gibt es viele vegetarische, </br> kulinarische Schätze </br> die Du probieren solltest! </br> Was du hier siehst sind sogenannte Breaks!
+</br> Jetzt erstellen wir eine Auflistung:
+<ul>
+<li> <a href="https://validator.nu/">zum Validator</a></li>
+<li> <a href="https://validator.nu/">zum Validator</a></li>
+<li> <a href="https://validator.nu/">zum Validator</a></li>
+<li> <a href="https://validator.nu/">zum Validator</a></li>
+<li> <a href="https://validator.nu/">zum Validator</a></li>
+</ul> <!-- Kommentar: Das Element ul beschreibt eine Aufzählungsliste, ohne besondere Reihenfolge, eine unordered list. Mit li beginnt ein neuer Punkt-->
+
+Das gleiche machen wir nun mit einer geordneten Liste.
+<ol>
+<li> <a href="https://validator.nu/">zum Validator</a></li>
+<li> <a href="https://validator.nu/">zum Validator</a></li>
+<li> <a href="https://validator.nu/">zum Validator</a></li>
+<li> <a href="https://validator.nu/">zum Validator</a></li>
+<li> <a href="https://validator.nu/">zum Validator</a></li>
+</ol> <!-- Kommentar: ol steht hier für eine geordnete Liste, die ordered list.-->
+
+Nun erstellen wir eine einfache Tabellen, die erste ohne Rahmung, die zweite mit usw.
+<table>
+	<tr>
+		<th>Spalte1</th>
+		<th>Spalte2</th>
+		<th>Spalte3</th>
+		<th>Spalte4</th>
+		<th>Spalte5</th>
+	</tr>
+</table> <!-- Kommentar: tr steht für table row. Der Befehl border - siehe unten - sorgt dafür, dass die Spalte umrandet wird. Wenn man border nicht schreibt, dann erstellt man eine rahmenlose Tabelle. 
+th steht dabei für den Tabellenkopf und td für Tabellendaten -->
+
+<table border>
+	<tr>
+		<th>Gemüse</th>
+		<th>Getreide</th>
+		<th>Suppen</th>
+		<th>Früchte</th>
+		<th>Desserts</th>
+	</tr>
+</table>
+
+<table border>
+	<tr>
+		<td>Zelle 1</td>
+		<td>Zelle 2</td>
+		<td>Zelle 3</td>
+		<td>Zelle 4</td>
+		<td>Zelle 5</td>
+		<td>Zelle 6</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+		<td colspan="3">4</td>
+	</tr> <!-- Kommentar: Der Wert nach colspan= sagt, dass eine Zelle auf 3 Zellen erweitert werden soll. Die 4 ist die Beschriftung in der Zelle. -->
+	<tr>
+		<td colspan="2">1</td>
+		<td>3</td>
+		<td>4</td>
+		<td>5</td>
+		<td>6</td>
+	</tr>
+</table>
+
+<h4>
+Jetzt machen wir Tabellen, bei der wir die Zelle nach unten ausdehnen, eine rowspan Taballe.
+</h4>
+Jetzt machen wir Tabellen, bei der wir die Zelle nach unten ausdehnen, eine rowspan Taballe.
+
+<table border>
+	<tr>
+		<th>Gemüse</th>
+		<th>Getreide</th>
+		<th>Suppen</th>
+		<th>Früchte</th>
+		<th>Desserts</th>
+	</tr>
+	<tr>
+		<td>Zelle 1</td>
+		<td>Zelle 2</td>
+		<td>Zelle 3</td>
+		<td>Zelle 4</td>
+		<td>Zelle 5</td>
+	</tr>
+	<tr>
+		<td rowspan="2">1</td>
+		<td>2</td>
+		<td>3</td>
+		<td>4</td>
+		<td>5</td>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+		<td>4</td>
+</table>
+
+<p>
+</p>
+
+Jetzt geht es um die Anordnung der Daten in einer Zelle:
+<table border>
+	<tr>
+		<th>Gemüse</th>
+		<th>Getreide</th>
+		<th>Suppen</th>
+		<th>Früchte</th>
+		<th>Desserts</th>
+	</tr>
+	<tr>
+		<td rowspan="2" style="vertical-align:bottom"><strong>Bottom</strong></td> <!-- es gibt: middle, top, bottom -->
+		<td>2</td>
+		<td rowspan="2" style="vertical-align:middel"><strong>Middle</strong></td>
+		<td>4</td>
+		<td rowspan="2" style="vertical-align:top"><strong>Top</strong></td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>3</td>
+	</tr>
+	<tr>
+		<td style="text-align:right">Right</td>
+		<td>2</td>
+		<td style="text-align:left">Left</td>
+		<td colspan="2" style="text-align:center">Center</td>
+	</tr>
+</table>
+<p>
+</p>
+Jetzt machen wir das Ganze bunt!!!!!
+
+<table border>
+	<tr>
+		<th>Zelle 1</th>
+		<th>Zelle 2</th>
+		<th>Zelle 3</th>
+		<th>Zelle 4</th>
+	</tr>
+	<tr>
+		<td style="background-color:black">1</td>
+		<td style="background-color:blue">1</td>
+		<td style="background-color:green">1</td>
+		<td style="background-color:yellow">1</td>
+	</tr>
+	</tr>
+</table>
+<p>
+</p>
+Das ist ja noch einfach, weil man einfach die Farben nennt. Aber es gibt viele Farben, die ich mit Hilfe eines RGB Codes, entnommen aus einer Excel Tabelle.
+Los gehts!
+<table>
+	<tr>
+		<th>Zelle 1</th>
+		<th>Zelle 2</th>
+		<th>Zelle 3</th>
+		<th>Zelle 4</th>
+	</tr>
+	<tr>
+		<td style="background-color:rgb(239,243,255)">1</td>
+		<td style="background-color:rgb(189,215,231)">2</td>
+		<td style='background-color:rgb(107,174,214)'>3</td>
+		<td style='background-color:rgb(33,113,181)'>4</td>
+	</tr>
+</table>
+
+<h3> Hier ist der Link zu der Homepage mit den RGB Codes für Excel.</h3>
+<a href="http://colorbrewer2.org">Color Brewer</a>
+
+Zu guter Letzt versuchen wir die Werte in der Excel Tabelle mit Hilfe der Funktion "Verketten" umzuwandeln, damit man sie mit STRG+C in Notepad einfach importieren kann.
+
+GIT Text und dann hochladen
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
